@@ -2,88 +2,63 @@
 
 ## 📌 Project Overview
 
-This project analyzes Indian Premier League (IPL) match data to uncover strategic patterns in scoring, player performance, and match outcomes. The goal is to understand how different phases of a T20 match influence team success and player impact.
+This project analyzes Indian Premier League (IPL) data to uncover patterns in match strategy, team performance, and player impact. The analysis focuses on how different phases of a T20 match influence outcomes and player roles.
 
-The analysis is built using SQL for data processing and Power BI for interactive visualization.
+The project uses SQL for data extraction and transformation, and Power BI for building interactive dashboards.
 
 ---
 
 ## 🎯 Objectives
 
-* Analyze scoring patterns across match phases (Powerplay, Middle, Death)
-* Compare performance of winning vs losing teams
+* Analyze run rate trends across match phases (Powerplay, Middle, Death)
+* Compare winning vs losing team performance
 * Evaluate batting first vs chasing strategies
-* Identify top-performing teams in high-pressure situations (death overs)
+* Identify top-performing teams in death overs
 * Analyze player performance based on match phases
-
----
-
-## 📊 Dataset
-
-* **Source:** IPL Ball-by-Ball and Match Data
-* **Time Period:** 2008 – 2025
-* **Tables Used:**
-
-  * `ball_by_ball`
-  * `matches`
 
 ---
 
 ## 🛠 Tools & Technologies
 
-* **SQL (SQLite):** Data cleaning, transformation, and aggregation
-* **Power BI:** Dashboard creation and visualization
-* **Excel:** Intermediate data storage and organization
+* **SQL (SQLite)** – Data querying and transformation
+* **Power BI** – Dashboard creation and visualization
+* **Excel** – Data storage and intermediate processing
 
 ---
 
-## 📈 Dashboard Pages
+## 📊 Dashboard Preview
 
-### 🔹 1. Match Strategy Analysis
+### 🔹 Match Strategy Analysis
 
-* Run Rate by Phase
-* Toss Decisions Impact
-* Winning vs Losing Teams (Phase-wise)
-* Batting First vs Chasing Comparison
-
-👉 Key Insight: Death overs have the highest impact on match outcomes, with significantly higher run rates.
+![Match Strategy](images/page1.png)
 
 ---
 
-### 🔹 2. Team Performance Analysis
+### 🔹 Team Performance Analysis
 
-* Top Teams in Death Overs
-* IPL Run Rate Trend (2008–2025)
-* Key performance indicators (average run rate, best season, best team)
-
-👉 Key Insight: Teams with strong death-over performance consistently rank higher.
+![Team Analysis](images/page2.png)
 
 ---
 
-### 🔹 3. Player Performance Analysis (Phase-wise)
+### 🔹 Player Performance Analysis (Phase-wise)
 
-* Top Batsmen (Runs – Phase-wise)
-* Top Batsmen (Strike Rate – Phase-wise)
-* Top Bowlers (Wickets – Phase-wise)
-* Most Economical Bowlers (Phase-wise)
-
-👉 This page focuses on **role-based performance**, highlighting how players contribute differently across match phases.
+![Player Analysis](images/page3.png)
 
 ---
 
 ## 🔍 Key Insights
 
-* 🔥 **Death Overs Dominance:** Highest scoring rates occur in death overs, making them crucial for match outcomes
-* 🏏 **Winning Teams Perform Better Across All Phases:** Especially noticeable in death overs
-* ⚖️ **Batting First vs Chasing:** Minimal difference overall, but situational advantages exist
-* 📈 **Rising Scoring Trend:** IPL run rates have steadily increased over the years
-* 🎯 **Role-Based Player Impact:** Certain players excel specifically in Powerplay or Death overs rather than overall
+* 🔥 **Death overs are the most impactful phase**, with the highest run rates
+* 🏏 **Winning teams consistently outperform losing teams** across all phases
+* ⚖️ **Batting first vs chasing shows marginal differences**, suggesting situational dependency
+* 📈 **IPL scoring trends have increased over time**, indicating more aggressive gameplay
+* 🎯 **Player roles vary by phase**, with different players excelling in Powerplay, Middle, and Death overs
 
 ---
 
 ## ⚠️ Note on Player Analysis
 
-Player rankings are **phase-specific** and may include players with high efficiency in limited opportunities. The focus is on **impact within a match phase**, rather than overall career totals.
+Player rankings are phase-specific and may include players with high efficiency in limited opportunities. The focus is on **impact within a match phase**, rather than overall career performance.
 
 ---
 
@@ -99,9 +74,9 @@ ipl-match-analysis/
 │   └── IPL_Analysis.xlsx
 │
 ├── images/
-│   ├── page1_match_strategy.png
-│   ├── page2_team_analysis.png
-│   └── page3_player_analysis.png
+│   ├── page1.png
+│   ├── page2.png
+│   └── page3.png
 │
 ├── sql/
 │   └── queries.sql
@@ -113,18 +88,16 @@ ipl-match-analysis/
 
 ## 🚀 Conclusion
 
-This project demonstrates how data analytics can uncover strategic insights in cricket. By focusing on match phases, the analysis highlights the importance of situational performance over aggregate statistics.
-
-The approach can be extended to team selection, match strategy optimization, and predictive modeling.
+This project demonstrates how data analysis can provide strategic insights in cricket. By focusing on match phases, it highlights the importance of situational performance over aggregate statistics.
 
 ---
 
-## 📌 Future Improvements
+## 🔮 Future Improvements
 
-* Add player consistency filters (minimum balls/matches)
-* Include venue-based analysis
-* Build predictive models for match outcomes
-* Enhance interactivity with more advanced filters
+* Apply filters for minimum balls/matches in player analysis
+* Include venue and toss impact deeper analysis
+* Add predictive modeling for match outcomes
+* Enhance interactivity with advanced filters
 
 ---
 
